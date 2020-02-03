@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4" style="text-align: center;">ADD YELPCAMP HERE</h1>
+      
+    </div>
+  </div>
+<div class="container">
+    <div class="row" style="width: 33%; margin: 20px auto;">
+        <form method="POST" action="/campground">
+
+            <div class="form-group">
+                <input type="text" class="form-control"  name="campName" placeholder="name ">
+            </div>
+            <div class="form-group">
+                <input type="text"class="form-control"  name="imjUrl" placeholder="camp">
+                
+            </div>
+            <div class="form-group">
+                <input type="text"class="form-control"  name="description" placeholder="description">
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" placeholder="submit" class="btn btn-primary">                
+            </div>
+          
+        </form>
+
+    </div>
+</div>   
+   
+
+
+<%- include('partials/foooter') %>

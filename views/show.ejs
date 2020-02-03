@@ -1,0 +1,21 @@
+
+
+<h1> working</h1>
+
+
+    <h1>
+        <%=  campsShow.name %>
+    </h1>
+    <img src="<%= campsShow.url %> ">
+
+   <p>
+       <%= campsShow.description %>
+   </p>
+
+
+
+  <% campsShow.comments.forEach(function(x){  %>
+<p>
+<b> <%=  x.author %>-</b>--<%= x.text %> 
+</p>
+ <%  }) %>
